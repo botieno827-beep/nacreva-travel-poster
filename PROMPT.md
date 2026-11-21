@@ -4,6 +4,8 @@ The built-in image generator was attempted and returned HTTP 403, "Image generat
 
 After the first development grade, the illustration was revised with lower, warmer sunlight, a more luminous lagoon, more stone striation, a sheltered mineral spring, subtle print grain and gently arched lettering. The judge feedback praised the original landmark and layout but identified flat light and atmosphere as the largest weakness.
 
+The third study moves the original composition to blue hour. A full moon, luminous lagoon, warm village windows and lanterns leading to the mineral baths make a specific promise of a sheltered night swim. The ivory destination lettering follows a quiet arc above the shell. No image from another entry was used in the artwork; the leading entry was viewed separately as a visual quality benchmark only.
+
 Use case: ads-marketing
 Asset type: one finished square travel poster, 1024 × 1024 pixels, full bleed, for an invented destination.
 

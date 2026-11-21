@@ -4,7 +4,7 @@
 [![rank](https://make.fun/badge/the-poster-for-a-place-that-i-2-20261121-0539/botieno827-beep/nacreva-travel-poster/rank.svg)](https://make.fun/bounty/the-poster-for-a-place-that-i-2-20261121-0539/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=the-poster-for-a-place-that-i-2-20261121-0539)
 [![reward](https://make.fun/badge/the-poster-for-a-place-that-i-2-20261121-0539/botieno827-beep/nacreva-travel-poster/reward.svg)](https://make.fun/bounty/the-poster-for-a-place-that-i-2-20261121-0539?utm_source=github&utm_medium=readme&utm_campaign=the-poster-for-a-place-that-i-2-20261121-0539)
 
-An original travel poster for an imaginary island: a monumental limestone spiral shelters a warm turquoise lagoon and a mineral spring. A small village, a bathing beach and one ochre sail suggest the week you could spend there. Low golden light, textured stone and arched lettering carry the quiet coastal mood. NACREVA is the only text within the picture.
+An original travel poster for an imaginary island: a monumental limestone spiral shelters a luminous turquoise lagoon and a warm mineral spring. Moonlight, warm village windows, a lantern-lit walk to the shell baths and a night swim suggest the week you could spend there. Textured stone and arched ivory lettering carry the quiet blue-hour mood. NACREVA is the only text within the picture.
 
 ![NACREVA travel poster](poster.jpg)
 
