@@ -6,6 +6,8 @@ After the first development grade, the illustration was revised with lower, warm
 
 The third study moves the original composition to blue hour. A full moon, luminous lagoon, warm village windows and lanterns leading to the mineral baths make a specific promise of a sheltered night swim. The ivory destination lettering follows a quiet arc above the shell. No image from another entry was used in the artwork; the leading entry was viewed separately as a visual quality benchmark only.
 
+The fourth study returns to the stronger daylight direction. A carved promenade and small guesthouses turn the shell into somewhere to explore; a barefoot visitor puts the viewer at the water's edge. Feathered shallow-water colour, irregular ripples and broken limestone reflections make the lagoon feel less diagrammatic.
+
 Use case: ads-marketing
 Asset type: one finished square travel poster, 1024 × 1024 pixels, full bleed, for an invented destination.
 

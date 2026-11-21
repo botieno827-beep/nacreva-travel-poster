@@ -10,51 +10,47 @@ function path(d, fill, extra = '') { put(`<path d="${d}" fill="${fill}" ${extra}
 function ellipse(cx,cy,rx,ry,fill,extra='') { put(`<ellipse cx="${cx}" cy="${cy}" rx="${rx}" ry="${ry}" fill="${fill}" ${extra}/>`); }
 function house(x,y,s=1) {
  put(`<g transform="translate(${x} ${y}) scale(${s})">`);
- path('M0 0 L17 -5 L31 0 L31 24 L0 25 Z','#e6d5ad');
- path('M17 -5 L31 0 L31 24 L17 19 Z','#a59582');
+ path('M0 0 L17 -5 L31 0 L31 24 L0 25 Z','#f8e7cd');
+ path('M17 -5 L31 0 L31 24 L17 19 Z','#d6b494');
  path('M-3 0 L12 -10 L34 -1 L18 4 Z','#b85842');
- path('M5 10 L10 9 L10 16 L5 17 Z','#f7d386');
- path('M19 9 L25 11 L25 17 L19 15 Z','#e9b779');
+ path('M5 10 L10 9 L10 16 L5 17 Z','#285760');
+ path('M19 9 L25 11 L25 17 L19 15 Z','#57736d');
  path('M12 15 Q16 12 18 16 L18 25 L12 25 Z','#1e5159');
  put('</g>');
 }
 put(`<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
 <defs>
- <linearGradient id="sky" x2="0.18" y2="1"><stop stop-color="#10243e"/><stop offset=".44" stop-color="#205363"/><stop offset=".78" stop-color="#437c7c"/><stop offset="1" stop-color="#c99b81"/></linearGradient>
- <linearGradient id="sea" x2=".1" y2="1"><stop stop-color="#316b78"/><stop offset=".25" stop-color="#1d6677"/><stop offset=".58" stop-color="#0e4b62"/><stop offset="1" stop-color="#092b42"/></linearGradient>
- <linearGradient id="shell" x1=".12" y1=".1" x2=".78" y2=".94"><stop stop-color="#f9ecc7"/><stop offset=".24" stop-color="#f8d59b"/><stop offset=".51" stop-color="#dc9866"/><stop offset=".72" stop-color="#f7c889"/><stop offset="1" stop-color="#503d41"/></linearGradient>
+ <linearGradient id="sky" x2="0.18" y2="1"><stop stop-color="#f5e4c1"/><stop offset=".44" stop-color="#f3cd9d"/><stop offset=".78" stop-color="#ecac82"/><stop offset="1" stop-color="#e9b48c"/></linearGradient>
+ <linearGradient id="sea" x2=".1" y2="1"><stop stop-color="#4d9392"/><stop offset=".25" stop-color="#2b8c8e"/><stop offset=".58" stop-color="#0e747b"/><stop offset="1" stop-color="#073e50"/></linearGradient>
+ <linearGradient id="shell" x1=".12" y1=".1" x2=".78" y2=".94"><stop stop-color="#fff5cf"/><stop offset=".24" stop-color="#f8d59b"/><stop offset=".51" stop-color="#dc9866"/><stop offset=".72" stop-color="#f7c889"/><stop offset="1" stop-color="#925947"/></linearGradient>
  <linearGradient id="lip" x1=".05" y1=".1" x2=".9" y2=".85"><stop stop-color="#fff6dc"/><stop offset=".4" stop-color="#e2b080"/><stop offset=".7" stop-color="#b77455"/><stop offset="1" stop-color="#f8d29f"/></linearGradient>
  <linearGradient id="cave" x1=".08" y1="0" x2=".8" y2="1"><stop stop-color="#633d37"/><stop offset=".4" stop-color="#a76b50"/><stop offset=".76" stop-color="#e0a777"/><stop offset="1" stop-color="#ffe0a0"/></linearGradient>
- <linearGradient id="lagoon" x1=".3" y1="0" x2=".6" y2="1"><stop stop-color="#96e3cd"/><stop offset=".3" stop-color="#53d6c5"/><stop offset=".63" stop-color="#239baa"/><stop offset="1" stop-color="#146c86"/></linearGradient>
- <linearGradient id="sand" x1="0" y1="0" x2="1" y2=".8"><stop stop-color="#dfc39a"/><stop offset=".7" stop-color="#e7d6af"/><stop offset="1" stop-color="#a7957c"/></linearGradient>
+ <linearGradient id="lagoon" x1=".3" y1="0" x2=".6" y2="1"><stop stop-color="#b0ddc1"/><stop offset=".3" stop-color="#62c7b8"/><stop offset=".63" stop-color="#3bb1a6"/><stop offset="1" stop-color="#1a8d91"/></linearGradient>
+ <linearGradient id="sand" x1="0" y1="0" x2="1" y2=".8"><stop stop-color="#f7ddb0"/><stop offset=".7" stop-color="#f9ebcb"/><stop offset="1" stop-color="#dfb78c"/></linearGradient>
  <radialGradient id="sun"><stop stop-color="#fff8df" stop-opacity=".8"/><stop offset="1" stop-color="#fff8df" stop-opacity="0"/></radialGradient>
  <clipPath id="shellclip"><path d="M247 679 C213 614 221 508 264 430 C314 336 406 279 516 278 C666 273 802 363 851 493 C895 607 849 688 765 709 L655 707 C745 667 787 605 761 531 C738 465 679 422 612 431 C552 439 519 491 534 539 C548 581 592 594 621 572 C641 557 642 530 626 516 C614 503 594 506 590 520 C588 531 597 541 607 538 C611 557 586 564 570 545 C547 517 569 478 603 475 C657 469 694 517 679 566 C660 629 600 655 539 635 C457 609 418 527 445 456 C466 401 508 374 557 371 C430 343 327 426 306 525 C290 601 324 657 372 689 Z"/></clipPath>
  <clipPath id="waterclip"><rect x="0" y="654" width="1024" height="370"/></clipPath>
  <filter id="paper" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence baseFrequency=".67" numOctaves="3" stitchTiles="stitch" seed="11"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".15"/></feComponentTransfer><feBlend in="SourceGraphic" mode="multiply"/></filter>
  <path id="name-arc" d="M102 205 Q512 117 922 205"/>
-</defs>
+<radialGradient id="lagoonlight" cx=".5" cy=".33" r=".65"><stop stop-color="#88e0c4" stop-opacity=".96"/><stop offset=".44" stop-color="#57c8b7" stop-opacity=".86"/><stop offset=".82" stop-color="#29a0a0" stop-opacity=".23"/><stop offset="1" stop-color="#229396" stop-opacity="0"/></radialGradient></defs>
 <g filter="url(#paper)">
 <rect width="1024" height="1024" fill="url(#sky)"/>
 <ellipse cx="174" cy="467" rx="280" ry="254" fill="url(#sun)"/>
 <circle cx="174" cy="467" r="63" fill="#fff3c5" opacity=".95"/>
 `);
-
-// Blue-hour sky: sparse stars and an amber full moon over the sheltered bay.
-for(const [x,y,r] of [[77,350,1.3],[318,252,1],[418,241,1.4],[604,256,1],[694,273,1.3],[908,374,1.2],[941,299,1.7],[109,566,1.1],[844,307,.9],[381,277,.8],[882,459,.8],[77,449,.8],[223,320,.8],[941,533,.8]]) ellipse(x,y,r,r,'#f9e8bc','opacity=".72"');
-
 // Long, quiet cloud shapes echo the curve of the shell without competing with it.
-path('M0 273 C90 257 125 281 201 270 C237 265 268 250 312 256 C230 270 169 286 112 281 C69 277 33 281 0 286 Z','#a6c9c3','opacity=".24"');
-path('M736 243 C806 223 836 242 880 231 C929 218 963 230 1024 220 L1024 233 C938 245 841 253 736 243 Z','#b5d0c7','opacity=".3"');
-path('M64 630 C110 610 142 622 169 614 C209 599 257 623 298 632 L298 664 L64 664Z','#466c6f','opacity=".55"');
+path('M0 273 C90 257 125 281 201 270 C237 265 268 250 312 256 C230 270 169 286 112 281 C69 277 33 281 0 286 Z','#fff8e4','opacity=".58"');
+path('M736 243 C806 223 836 242 880 231 C929 218 963 230 1024 220 L1024 233 C938 245 841 253 736 243 Z','#fff6df','opacity=".72"');
+path('M64 630 C110 610 142 622 169 614 C209 599 257 623 298 632 L298 664 L64 664Z','#96afaa','opacity=".55"');
 put('<rect y="650" width="1024" height="374" fill="url(#sea)"/>');
-// A low moon throws a long, broken track of gold across the distant water.
+// A low sun throws a long, broken track of gold across the distant water.
 for(let i=0;i<52;i++) {
  const y=655+i*2.4,x=174+(random()-.5)*38,w=12+i*.6+random()*16;
  path(`M${f(x-w)} ${f(y)} q${f(w)} 1.5 ${f(w*2)} 0`,'none',`stroke="#ffe0a2" stroke-width="${f(.7+i/42)}" opacity="${f(.42-i*.006)}"`);
 }
 path('M0 651 C215 648 337 655 507 651 C740 648 849 656 1024 651','none','stroke="#eef0d4" stroke-width="2" opacity=".5"');
 // The shallow lagoon is visibly accessible from the shore.
-path('M123 750 C262 685 556 661 793 708 C958 744 988 831 829 902 C680 969 357 959 153 889 C57 856 37 789 123 750Z','url(#lagoon)');
+path('M123 750 C262 685 556 661 793 708 C958 744 988 831 829 902 C680 969 357 959 153 889 C57 856 37 789 123 750Z','url(#lagoonlight)');
 ellipse(558,713,315,26,'#174f58','opacity=".23"');
 // Distant low headland, guesthouses and a walking path give the monument human scale.
 path('M65 739 C105 693 179 677 235 663 C305 645 361 656 418 691 L473 735 C300 745 191 770 65 739 Z','#a6ab7b');
@@ -96,6 +92,22 @@ ellipse(582,705,12,3,'#e8e8b7','opacity=".8"');
 path('M531 701 C516 687 535 683 526 670 M554 697 C542 684 562 679 553 664 M568 693 C559 683 576 674 565 664','none','stroke="#fff1ca" stroke-width="2.4" opacity=".4"');
 path('M246 678 Q310 663 374 689 L475 707 L477 725 C365 742 301 727 234 705Z','#ad8860');
 path('M228 700 C325 720 399 733 484 713','none','stroke="#f8e4b6" stroke-width="8"');
+
+// A carved promenade makes the shell a place to explore, not just an object.
+path('M271 675 C251 622 252 564 280 509 C307 454 348 418 393 398','none','stroke="#996b51" stroke-width="8" opacity=".55"');
+path('M270 672 C250 619 252 562 279 507 C306 452 347 416 392 397','none','stroke="#f8e6bc" stroke-width="5"');
+path('M265 673 C246 618 248 561 275 505 C303 450 345 413 391 394','none','stroke="#a48a62" stroke-width="1.3"');
+for(const [x,y,angle] of [[262,646,-12],[258,631,-6],[257,615,0],[259,598,7],[262,581,12],[267,564,17],[274,546,23],[283,528,25],[294,507,29],[307,487,35],[320,470,41],[337,452,46],[354,437,50],[373,423,54]]) {
+ put('<g transform="translate('+x+' '+y+') rotate('+angle+')">');
+ path('M-4 0 H4 M-4 -3 H4 M-4 -6 H4','none','stroke="#ac8b66" stroke-width=".8"');
+ put('</g>');
+}
+house(263,592,.56);house(282,527,.48);house(317,468,.39);house(366,417,.31);
+for(const [x,y]of [[270,616],[292,544],[326,485],[374,433]]) {
+ path('M'+x+' '+y+' q-12 -7 -20 -1 q10 0 18 5Z','#6e805a');
+ path('M'+x+' '+y+' q-4 -13 2 -17 q3 7 0 17Z','#7d875c');
+}
+
 // A few compact houses cluster at the left foot, never covering the landmark.
 house(139,704,.79);house(166,693,.88);house(197,684,.76);house(218,698,.92);house(250,688,.71);
 house(278,674,.65);house(303,682,.73);house(328,691,.67);house(183,720,.78);
@@ -105,14 +117,6 @@ for(const [x,y,s] of [[116,721,1],[263,703,.8],[337,704,.65],[156,693,.7]]) {
  path('M2 -24 Q-10 -32 -16 -26 Q-5 -24 2 -17 Q14 -27 22 -24 Q15 -32 2 -24Z','#3f6d50');
  put('</g>');
 }
-
-// Warm windows and lanterns trace the walk from the village to the mineral baths.
-for(const [x,y] of [[135,732],[192,726],[253,713],[309,709],[366,712],[419,718],[459,716]]) {
- ellipse(x,y-3,8,8,'#ffd591','opacity=".16"');
- path('M'+x+' '+y+' v-9','none','stroke="#6f6551" stroke-width="1.1"');
- ellipse(x,y-9,1.8,2.5,'#ffe3a5');
-}
-
 // Quiet parallel highlights, progressively larger toward the viewer.
 put('<g clip-path="url(#waterclip)">');
 for(let i=0;i<190;i++) {
@@ -123,6 +127,19 @@ for(let i=0;i<190;i++) {
 put('</g>');
 // Light reflected from the shell's sunlit arch.
 for(let i=0;i<21;i++) { const y=731+i*3.8,w=15+i*1.35;path(`M${f(552-w)} ${f(y)} q${f(w)} 2 ${f(w*2)} 0`,'none',`stroke="#f4e0a6" stroke-width="${i<9?2:1}" opacity="${f(.45-i*.015)}"`); }
+
+// Irregular water marks and sun glints replace a perfectly bounded flat lagoon.
+for(let i=0;i<340;i++) {
+ const x=50+random()*940,y=707+random()*280;
+ const n=3+random()*14;
+ path('M'+f(x)+' '+f(y)+' q'+f(n*.5)+' -1.7 '+f(n)+' 0','none','stroke="'+(i%7===0?'#fae9ba':'#b2e3ca')+'" stroke-width="'+f(.5+random()*.7)+'" opacity="'+f(.13+random()*.25)+'"');
+}
+// Soft, fractured reflection of the limestone ribs in the sheltered water.
+for(let i=0;i<30;i++) {
+ const y=737+i*3.2,w=40+i*2;
+ path('M'+f(524-w+random()*13)+' '+f(y)+' q'+f(w*.5)+' 2 '+f(w)+' 0','none','stroke="#e8c797" stroke-width="'+f(1+random())+'" opacity="'+f(.21-i*.004)+'"');
+}
+
 // Bathing beach sweeps in from the foreground, making the viewer feel present.
 path('M0 837 C79 806 148 807 201 829 C260 854 276 908 344 930 C413 951 476 948 523 970 C552 983 574 1003 594 1024 L0 1024Z','url(#sand)');
 path('M0 833 C89 801 153 803 204 825 C273 853 290 907 350 926 C422 949 486 944 532 968','none','stroke="#d3e5c3" stroke-width="13" opacity=".75"');
@@ -147,27 +164,27 @@ path('M770 789 Q792 798 814 789 L804 800 L780 798Z','#914f37');
 path('M794 741 L794 792','none','stroke="#655443" stroke-width="2"');
 path('M790 746 Q773 766 774 785 L790 785Z','#eeb55d');
 path('M798 752 L811 785 L798 785Z','#f8dfad');
+
+// A barefoot visitor at the water's edge puts the viewer inside the holiday.
+path('M390 938 L425 951 L439 949 L398 933Z','#7c9d8d','opacity=".24"');
+path('M384 919 L384 934 Q383 939 379 940 M394 919 L397 932 Q399 936 402 935','none','stroke="#b27e57" stroke-width="3.6" stroke-linecap="round"');
+path('M381 898 Q388 893 397 899 L398 920 Q390 925 379 919Z','#f4e9cf');
+path('M380 901 Q374 911 373 920 M397 901 Q404 909 408 916','none','stroke="#ba865d" stroke-width="3.2" stroke-linecap="round"');
+ellipse(388,889,4.9,6.7,'#b47e55');
+path('M384 886 Q388 881 393 885 L393 891 L390 888 L384 889Z','#604b3a');
+ellipse(388,884,10,2.8,'#d5ad67');
+path('M382 884 L383 879 Q389 876 394 880 L395 885Z','#e8c988');
+path('M380 939 q9 3 18 0 M382 943 q12 2 24 0','none','stroke="#e7edd0" stroke-width="1.3" opacity=".8"');
+for(const [x,y]of [[323,939],[337,944],[351,941],[366,944]])ellipse(x,y,2.2,.9,'#b5a080','opacity=".5"');
+
 // Foreground leaf framing is restrained and stays clear of the title.
 path('M1000 1024 Q973 927 992 848','none','stroke="#1b5154" stroke-width="6"');
 for(let i=0;i<8;i++){const y=872+i*17;path(`M990 ${y+11} Q${928-i*3} ${y-17} ${928-i*4} ${y-40} Q973 ${y-24} 990 ${y+11}Z`,i%2?'#255f5b':'#346f64');path(`M990 ${y+15} Q1040 ${y-21} 1051 ${y-42} Q1007 ${y-30} 990 ${y+15}Z`,'#204f51');}
-
-// A night swim in a warm, softly luminous lagoon is the destination's promise.
-path('M0 824 C83 795 153 798 210 823 C279 853 298 902 356 920 C420 940 487 939 538 962','none','stroke="#8bedd6" stroke-width="2" opacity=".88"');
-ellipse(336,891,19,4,'#80dfc5','opacity=".42"');
-ellipse(337,877,4.4,5.2,'#ae8063');
-path('M325 885 Q338 891 350 884','none','stroke="#d4af84" stroke-width="3.4"');
-path('M330 888 Q338 893 344 888 L342 900 L334 901Z','#9ac8b1','opacity=".28"');
-ellipse(166,919,21,16,'#ffd584','opacity=".15"');
-path('M166 919 v-25','none','stroke="#796746" stroke-width="2"');
-path('M160 894 L172 894 L171 907 L161 907Z','#edba69');
-path('M161 894 Q166 886 171 894','none','stroke="#796746" stroke-width="1.6"');
-path('M163 896 h6 v8 h-6Z','#fff0b7');
-
 // A fine ink border and warm paper edge make this feel like a complete print.
-put('<rect x="18" y="18" width="988" height="988" rx="1" fill="none" stroke="#eadab3" stroke-width="22"/>');
+put('<rect x="18" y="18" width="988" height="988" rx="1" fill="none" stroke="#f6e9ca" stroke-width="22"/>');
 put('<rect x="31" y="31" width="962" height="962" fill="none" stroke="#517475" stroke-width="1" opacity=".6"/>');
 // Lettering is the only copy. Tracking and quiet sky give it deliberate hierarchy.
-put('<text text-anchor="middle" font-family="Bodoni Moda, Bodoni MT, Georgia, serif" font-size="134" font-weight="400" letter-spacing="8" fill="#f1e2b2"><textPath href="#name-arc" startOffset="50%">NACREVA</textPath></text>');
+put('<text text-anchor="middle" font-family="Bodoni Moda, Bodoni MT, Georgia, serif" font-size="134" font-weight="400" letter-spacing="8" fill="#173e49"><textPath href="#name-arc" startOffset="50%">NACREVA</textPath></text>');
 put('<path d="M443 218 H489 M535 218 H581" fill="none" stroke="#ae7c51" stroke-width="1.5"/><path d="M502 218 L512 212 L522 218 L512 224Z" fill="#b8895a"/>');
 put('<rect x="32" y="32" width="960" height="960" fill="#c6a06f" opacity=".027" style="mix-blend-mode:multiply"/>');
 put('</g></svg>');
