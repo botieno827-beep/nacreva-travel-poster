@@ -2,6 +2,8 @@
 
 The built-in image generator was attempted and returned HTTP 403, "Image generation is not enabled for this group". No generated image was obtained or used. The final illustration is original procedural vector artwork written in `artwork.mjs`, following the direction below. The exact attempted prompt is preserved in the build session.
 
+After the first development grade, the illustration was revised with lower, warmer sunlight, a more luminous lagoon, more stone striation, a sheltered mineral spring, subtle print grain and gently arched lettering. The judge feedback praised the original landmark and layout but identified flat light and atmosphere as the largest weakness.
+
 Use case: ads-marketing
 Asset type: one finished square travel poster, 1024 × 1024 pixels, full bleed, for an invented destination.
 

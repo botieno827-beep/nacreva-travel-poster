@@ -20,27 +20,34 @@ function house(x,y,s=1) {
 }
 put(`<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
 <defs>
- <linearGradient id="sky" x2="0.18" y2="1"><stop stop-color="#f6eed9"/><stop offset=".58" stop-color="#f3dec0"/><stop offset="1" stop-color="#d5dfcf"/></linearGradient>
- <linearGradient id="sea" x2=".1" y2="1"><stop stop-color="#599b9e"/><stop offset=".25" stop-color="#3b9398"/><stop offset=".58" stop-color="#16848a"/><stop offset="1" stop-color="#0e5968"/></linearGradient>
- <linearGradient id="shell" x1=".12" y1=".1" x2=".78" y2=".94"><stop stop-color="#fff6d9"/><stop offset=".30" stop-color="#f5ddb2"/><stop offset=".55" stop-color="#dca779"/><stop offset=".74" stop-color="#f7d7a2"/><stop offset="1" stop-color="#a76e51"/></linearGradient>
+ <linearGradient id="sky" x2="0.18" y2="1"><stop stop-color="#f5e4c1"/><stop offset=".44" stop-color="#f3cd9d"/><stop offset=".78" stop-color="#ecac82"/><stop offset="1" stop-color="#e9b48c"/></linearGradient>
+ <linearGradient id="sea" x2=".1" y2="1"><stop stop-color="#4d9392"/><stop offset=".25" stop-color="#2b8c8e"/><stop offset=".58" stop-color="#0e747b"/><stop offset="1" stop-color="#073e50"/></linearGradient>
+ <linearGradient id="shell" x1=".12" y1=".1" x2=".78" y2=".94"><stop stop-color="#fff5cf"/><stop offset=".24" stop-color="#f8d59b"/><stop offset=".51" stop-color="#dc9866"/><stop offset=".72" stop-color="#f7c889"/><stop offset="1" stop-color="#925947"/></linearGradient>
  <linearGradient id="lip" x1=".05" y1=".1" x2=".9" y2=".85"><stop stop-color="#fff6dc"/><stop offset=".4" stop-color="#e2b080"/><stop offset=".7" stop-color="#b77455"/><stop offset="1" stop-color="#f8d29f"/></linearGradient>
  <linearGradient id="cave" x1=".08" y1="0" x2=".8" y2="1"><stop stop-color="#633d37"/><stop offset=".4" stop-color="#a76b50"/><stop offset=".76" stop-color="#e0a777"/><stop offset="1" stop-color="#ffe0a0"/></linearGradient>
- <linearGradient id="lagoon" x1=".3" y1="0" x2=".6" y2="1"><stop stop-color="#74c4bb"/><stop offset=".45" stop-color="#72d5c5"/><stop offset="1" stop-color="#27a7a6"/></linearGradient>
+ <linearGradient id="lagoon" x1=".3" y1="0" x2=".6" y2="1"><stop stop-color="#b0ddc1"/><stop offset=".3" stop-color="#62c7b8"/><stop offset=".63" stop-color="#3bb1a6"/><stop offset="1" stop-color="#1a8d91"/></linearGradient>
  <linearGradient id="sand" x1="0" y1="0" x2="1" y2=".8"><stop stop-color="#f7ddb0"/><stop offset=".7" stop-color="#f9ebcb"/><stop offset="1" stop-color="#dfb78c"/></linearGradient>
  <radialGradient id="sun"><stop stop-color="#fff8df" stop-opacity=".8"/><stop offset="1" stop-color="#fff8df" stop-opacity="0"/></radialGradient>
  <clipPath id="shellclip"><path d="M247 679 C213 614 221 508 264 430 C314 336 406 279 516 278 C666 273 802 363 851 493 C895 607 849 688 765 709 L655 707 C745 667 787 605 761 531 C738 465 679 422 612 431 C552 439 519 491 534 539 C548 581 592 594 621 572 C641 557 642 530 626 516 C614 503 594 506 590 520 C588 531 597 541 607 538 C611 557 586 564 570 545 C547 517 569 478 603 475 C657 469 694 517 679 566 C660 629 600 655 539 635 C457 609 418 527 445 456 C466 401 508 374 557 371 C430 343 327 426 306 525 C290 601 324 657 372 689 Z"/></clipPath>
  <clipPath id="waterclip"><rect x="0" y="654" width="1024" height="370"/></clipPath>
- <filter id="paper"><feTurbulence baseFrequency=".68" numOctaves="3" stitchTiles="stitch" seed="11"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".055"/></feComponentTransfer><feBlend in="SourceGraphic" mode="multiply"/></filter>
+ <filter id="paper" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence baseFrequency=".67" numOctaves="3" stitchTiles="stitch" seed="11"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".15"/></feComponentTransfer><feBlend in="SourceGraphic" mode="multiply"/></filter>
+ <path id="name-arc" d="M102 205 Q512 117 922 205"/>
 </defs>
+<g filter="url(#paper)">
 <rect width="1024" height="1024" fill="url(#sky)"/>
-<ellipse cx="245" cy="395" rx="230" ry="220" fill="url(#sun)"/>
-<circle cx="202" cy="402" r="57" fill="#fff6d9" opacity=".8"/>
+<ellipse cx="174" cy="467" rx="280" ry="254" fill="url(#sun)"/>
+<circle cx="174" cy="467" r="63" fill="#fff3c5" opacity=".95"/>
 `);
 // Long, quiet cloud shapes echo the curve of the shell without competing with it.
 path('M0 273 C90 257 125 281 201 270 C237 265 268 250 312 256 C230 270 169 286 112 281 C69 277 33 281 0 286 Z','#fff8e4','opacity=".58"');
 path('M736 243 C806 223 836 242 880 231 C929 218 963 230 1024 220 L1024 233 C938 245 841 253 736 243 Z','#fff6df','opacity=".72"');
 path('M64 630 C110 610 142 622 169 614 C209 599 257 623 298 632 L298 664 L64 664Z','#96afaa','opacity=".55"');
 put('<rect y="650" width="1024" height="374" fill="url(#sea)"/>');
+// A low sun throws a long, broken track of gold across the distant water.
+for(let i=0;i<52;i++) {
+ const y=655+i*2.4,x=174+(random()-.5)*38,w=12+i*.6+random()*16;
+ path(`M${f(x-w)} ${f(y)} q${f(w)} 1.5 ${f(w*2)} 0`,'none',`stroke="#ffe0a2" stroke-width="${f(.7+i/42)}" opacity="${f(.42-i*.006)}"`);
+}
 path('M0 651 C215 648 337 655 507 651 C740 648 849 656 1024 651','none','stroke="#eef0d4" stroke-width="2" opacity=".5"');
 // The shallow lagoon is visibly accessible from the shore.
 path('M123 750 C262 685 556 661 793 708 C958 744 988 831 829 902 C680 969 357 959 153 889 C57 856 37 789 123 750Z','url(#lagoon)');
@@ -60,9 +67,13 @@ for(let i=0;i<34;i++) {
  const ix=558+Math.cos(a)*166,iy=523+Math.sin(a)*144;
  path(`M${f(ox)} ${f(oy)} Q${f((ox+ix)/2-28)} ${f((oy+iy)/2+13)} ${f(ix)} ${f(iy)}`,'none',`stroke="${i%3===0?'#966347':'#fff5d8'}" stroke-width="${i%3===0?2.3:3.1}" opacity="${i%3===0?.2:.37}"`);
 }
-for(let i=0;i<310;i++) {
+for(let i=0;i<1500;i++) {
  const x=220+random()*660,y=280+random()*440;
- path(`M${f(x)} ${f(y)} q${f(2+random()*8)} ${f(-4+random()*6)} ${f(5+random()*16)} ${f(-5+random()*8)}`,'none',`stroke="${random()>.5?'#fff4cf':'#8e624b'}" stroke-width="${f(.5+random()*.85)}" opacity=".13"`);
+ path(`M${f(x)} ${f(y)} q${f(2+random()*8)} ${f(-4+random()*6)} ${f(5+random()*16)} ${f(-5+random()*8)}`,'none',`stroke="${random()>.5?'#fff4cf':'#8e624b'}" stroke-width="${f(.5+random()*.85)}" opacity=".2"`);
+}
+for(let i=0;i<25;i++) {
+ const y=330+i*14;
+ path(`M190 ${y} Q450 ${y+32} 690 ${y-19} T900 ${y-3}`,'none','stroke="#895c49" stroke-width="1.4" opacity=".15"');
 }
 put('</g>');
 path('M264 665 C234 574 271 445 370 373 C450 315 564 309 660 346','none','stroke="#fff5d6" stroke-width="8" opacity=".65"');
@@ -74,6 +85,11 @@ path('M475 712 C464 653 482 612 523 599 C563 587 607 617 621 658 C628 677 628 70
 path('M481 710 C480 669 490 638 512 624 C486 660 504 697 522 714Z','#644638','opacity=".66"');
 path('M474 710 Q549 688 626 711 L624 726 Q547 738 477 726Z','#74cdb8');
 path('M484 715 Q554 703 611 714','none','stroke="#e8e6b5" stroke-width="3" opacity=".82"');
+// A mineral spring runs down the glowing grotto into its sheltered bathing pool.
+path('M579 630 C575 652 584 668 579 700','none','stroke="#fff0bb" stroke-width="3.4" opacity=".77"');
+path('M587 639 C581 659 590 674 585 701','none','stroke="#f9d18f" stroke-width="1.5" opacity=".8"');
+ellipse(582,705,12,3,'#e8e8b7','opacity=".8"');
+path('M531 701 C516 687 535 683 526 670 M554 697 C542 684 562 679 553 664 M568 693 C559 683 576 674 565 664','none','stroke="#fff1ca" stroke-width="2.4" opacity=".4"');
 path('M246 678 Q310 663 374 689 L475 707 L477 725 C365 742 301 727 234 705Z','#ad8860');
 path('M228 700 C325 720 399 733 484 713','none','stroke="#f8e4b6" stroke-width="8"');
 // A few compact houses cluster at the left foot, never covering the landmark.
@@ -126,9 +142,9 @@ for(let i=0;i<8;i++){const y=872+i*17;path(`M990 ${y+11} Q${928-i*3} ${y-17} ${9
 put('<rect x="18" y="18" width="988" height="988" rx="1" fill="none" stroke="#f6e9ca" stroke-width="22"/>');
 put('<rect x="31" y="31" width="962" height="962" fill="none" stroke="#517475" stroke-width="1" opacity=".6"/>');
 // Lettering is the only copy. Tracking and quiet sky give it deliberate hierarchy.
-put('<text x="512" y="184" text-anchor="middle" font-family="Bodoni Moda, Bodoni MT, Georgia, serif" font-size="137" font-weight="400" letter-spacing="8" fill="#173e49">NACREVA</text>');
+put('<text text-anchor="middle" font-family="Bodoni Moda, Bodoni MT, Georgia, serif" font-size="134" font-weight="400" letter-spacing="8" fill="#173e49"><textPath href="#name-arc" startOffset="50%">NACREVA</textPath></text>');
 put('<path d="M443 218 H489 M535 218 H581" fill="none" stroke="#ae7c51" stroke-width="1.5"/><path d="M502 218 L512 212 L522 218 L512 224Z" fill="#b8895a"/>');
 put('<rect x="32" y="32" width="960" height="960" fill="#c6a06f" opacity=".027" style="mix-blend-mode:multiply"/>');
-put('</svg>');
+put('</g></svg>');
 await writeFile(new URL('./artwork.svg', import.meta.url), parts.join('\n'));
 console.log(JSON.stringify({shapes:parts.length,seed:20261121}));
