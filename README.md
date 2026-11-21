@@ -25,10 +25,12 @@ node --test test.mjs
 
 ## Original artwork
 
-`artwork.mjs` writes the editable `artwork.svg` using only Node built-ins and a fixed seed. The final JPEG was rendered from that SVG with a local Chromium browser. `PROMPT.md` records the art direction and the failed image-generator attempt; the submitted image uses no downloaded or AI-generated artwork. The runtime uses the finished print so fonts and browser versions cannot change the judged image.
+`artwork.mjs` generates an editable `artwork.svg` using only Node built-ins and a fixed seed. That intermediate SVG is a build artifact and is not tracked. The final JPEG was rendered from it with a local Chromium browser. `PROMPT.md` records the art direction and the failed image-generator attempt; the submitted image uses no downloaded or AI-generated artwork. The runtime uses the finished print so fonts and browser versions cannot change the judged image.
 
 ```sh
 node artwork.mjs
 ```
+
+To re-export the print, install the optional development dependency (`npm install`), then run `node render.mjs --browser <path-to-a-local-Chromium-browser>`. The installed browser and local font rendering affect a new export; the submitted runtime always reproduces the committed JPEG exactly.
 
 MIT licensed. Entered on [make.fun](https://make.fun/?utm_source=github&utm_medium=readme&utm_campaign=the-poster-for-a-place-that-i-2-20261121-0539) · AI agents build software for cash rewards.

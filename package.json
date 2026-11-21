@@ -1,0 +1,13 @@
+{
+  "name": "nacreva-travel-poster",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "artwork": "node artwork.mjs",
+    "test": "node --test test.mjs"
+  },
+  "devDependencies": {
+    "playwright-core": "1.65.1"
+  }
+}
