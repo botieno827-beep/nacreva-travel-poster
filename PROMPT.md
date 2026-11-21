@@ -20,3 +20,5 @@ Style: richly crafted contemporary gouache and lithographic illustration, elegan
 Text (verbatim): "NACREVA". Spell N A C R E V A exactly. Set this single word large, beautifully spaced, with bespoke elegant high-contrast serif lettering in deep teal across the pale sky, shaped and positioned as an intentional part of the composition. It must be cleanly legible at thumbnail size. The typography and illustration should feel conceived together. No other words, captions, slogans, quotations, ratings, logos, watermarks, map labels or small print.
 
 Constraints: original invented destination and original composition; do not reproduce any existing poster or real landmark. One finished flat image, no photographed paper, mockup, frame, collage, panel layout or decorative border. No extra text. The place's name and the inviting landmark are the two clear focal points.
+
+The fifth study tests clear blue weather above the same original daylight composition, for a stronger warm-stone/cool-sky contrast.

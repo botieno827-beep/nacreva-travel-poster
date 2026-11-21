@@ -20,7 +20,7 @@ function house(x,y,s=1) {
 }
 put(`<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
 <defs>
- <linearGradient id="sky" x2="0.18" y2="1"><stop stop-color="#f5e4c1"/><stop offset=".44" stop-color="#f3cd9d"/><stop offset=".78" stop-color="#ecac82"/><stop offset="1" stop-color="#e9b48c"/></linearGradient>
+ <linearGradient id="sky" x2="0.18" y2="1"><stop stop-color="#9fcbd0"/><stop offset=".44" stop-color="#bddacf"/><stop offset=".78" stop-color="#e3d5b6"/><stop offset="1" stop-color="#efc699"/></linearGradient>
  <linearGradient id="sea" x2=".1" y2="1"><stop stop-color="#4d9392"/><stop offset=".25" stop-color="#2b8c8e"/><stop offset=".58" stop-color="#0e747b"/><stop offset="1" stop-color="#073e50"/></linearGradient>
  <linearGradient id="shell" x1=".12" y1=".1" x2=".78" y2=".94"><stop stop-color="#fff5cf"/><stop offset=".24" stop-color="#f8d59b"/><stop offset=".51" stop-color="#dc9866"/><stop offset=".72" stop-color="#f7c889"/><stop offset="1" stop-color="#925947"/></linearGradient>
  <linearGradient id="lip" x1=".05" y1=".1" x2=".9" y2=".85"><stop stop-color="#fff6dc"/><stop offset=".4" stop-color="#e2b080"/><stop offset=".7" stop-color="#b77455"/><stop offset="1" stop-color="#f8d29f"/></linearGradient>
